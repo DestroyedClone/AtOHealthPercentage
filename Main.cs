@@ -1,12 +1,9 @@
-﻿using System;
-using System.Text;
-using BepInEx;
-using BepInEx.Configuration;
-using TMPro;
-using UnityEngine;
+﻿using BepInEx;
 using System.Security;
 using System.Security.Permissions;
-using UnityEngine.Networking;
+using System.Text;
+using TMPro;
+using UnityEngine;
 
 [module: UnverifiableCode]
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -85,7 +82,6 @@ namespace AtOHealthPercentage
 
             public void Awake()
             {
-
             }
 
             public void Start()
@@ -110,7 +106,8 @@ namespace AtOHealthPercentage
                 {
                     battleHPPercent = Mathf.CeilToInt(character.Hero.GetHpPercent());
                     travelHPPercent = Mathf.CeilToInt((float)character.Hero.GetHp() / GetMaxHP(character.Hero, true, false) * 100);
-                } else
+                }
+                else
                 {
                     battleHPPercent = Mathf.CeilToInt(character.NPC.GetHpPercent());
                     travelHPPercent = Mathf.CeilToInt((float)character.NPC.GetHp() / GetMaxHP(character.NPC, true, false) * 100);

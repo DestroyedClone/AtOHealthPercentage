@@ -1,8 +1,8 @@
 {
-  "name": "Ultrafast",
+  "name": "ShowHealthPercentage",
   "version_number": "0.1.0",
-  "website_url": "https://github.com/DestroyedClone/AtOUltrafast",
-  "description": "Enables ultrafast game speed setting.",
+  "website_url": "https://github.com/DestroyedClone/AtOHealthPercentage",
+  "description": "Shows health percentage in combat.",
   "dependencies": [
     "BepInEx-BepInExPack_AcrossTheObelisk-5.4.21",
     "HookGenPatcher-HookGenPatcher-1.2.10"
