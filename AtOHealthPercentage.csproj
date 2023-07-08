@@ -1,0 +1,379 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony20">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\0Harmony20.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Assembly-CSharp-nstrip.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\BepInEx.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx.Harmony">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\BepInEx.Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx.Preloader">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\BepInEx.Preloader.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Steamworks.Win64">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Facepunch.Steamworks.Win64.dll</HintPath>
+		</Reference>
+		<Reference Include="HarmonyXInterop">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\HarmonyXInterop.dll</HintPath>
+		</Reference>
+		<Reference Include="MMHOOK_Assembly-CSharp">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\MMHOOK_Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Mono.Cecil.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil.Mdb">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Mono.Cecil.Mdb.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil.Pdb">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Mono.Cecil.Pdb.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Cecil.Rocks">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Mono.Cecil.Rocks.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Security">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Mono.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="MonoMod.RuntimeDetour">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\MonoMod.RuntimeDetour.dll</HintPath>
+		</Reference>
+		<Reference Include="MonoMod.Utils">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\MonoMod.Utils.dll</HintPath>
+		</Reference>
+		<Reference Include="Photon3Unity3D">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Photon3Unity3D.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonChat">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\PhotonChat.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonRealtime">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\PhotonRealtime.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\PhotonUnityNetworking.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Demos">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\PhotonUnityNetworking.Demos.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Utilities">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\PhotonUnityNetworking.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Configuration">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\System.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.DataSetExtensions">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\System.Data.DataSetExtensions.dll</HintPath>
+		</Reference>
+		<Reference Include="System.EnterpriseServices">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\System.EnterpriseServices.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Security">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\System.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="System.ServiceModel.Internals">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\System.ServiceModel.Internals.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.2D.Animation.Runtime">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.2D.Animation.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.2D.Common.Runtime">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.2D.Common.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.2D.IK.Runtime">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.2D.IK.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.AI.Navigation">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.AI.Navigation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Cecil">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Burst.Cecil.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Cecil.Mdb">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Burst.Cecil.Mdb.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Cecil.Pdb">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Burst.Cecil.Pdb.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Cecil.Rocks">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Burst.Cecil.Rocks.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections.LowLevel.ILSupport">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.InputSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InternalAPIEngineBridge.001">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.MemoryProfiler">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.MemoryProfiler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Runtime">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Shaders">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ClusterInputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ContentLoadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.NVIDIAModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.NVIDIAModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsNativeModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UIElementsNativeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UNETModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UNETModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VirtualTexturingModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.VirtualTexturingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="websocket-sharp">
+			<HintPath>..\..\..\..\Documents\AtO Mods\AtOProjectReferences\websocket-sharp.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
